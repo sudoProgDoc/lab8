@@ -1,14 +1,12 @@
 #include <iostream>
 
-
 int* fill1(int* a)
 {
     printf("Статический массив, индексная адресация: ");
     for (int i = 0; i < 10; i++)
     {
         a[i] = i * i;
-        printf("%d", a[i]);
-        printf("%s", " ");
+        printf("%d%s", a[i], " ");
     }
     printf("\n");
     return a;
@@ -22,8 +20,7 @@ int* fill2(int* a)
     for (int i = 0; i < 10; i++)
     {
         *(p + i) = i * i;
-        printf("%d", *(p + i));
-        printf("%s", " ");
+        printf("%d%s", *(p + i), " ");
     }
     printf("\n");
     return p;
@@ -35,8 +32,7 @@ int* fill3(int* a)
     for (int i = 0; i < 10; i++)
     {
         a[i] = i * i;
-        printf("%d", a[i]);
-        printf("%s", " ");
+        printf("%d%s", a[i], " ");
     }
     printf("\n");
     return a;
@@ -50,8 +46,7 @@ int* fill4(int* a)
     for (int i = 0; i < 10; i++)
     {
         *(p + i) = i * i;
-        printf("%d", *(p + i));
-        printf("%s", " ");
+        printf("%d%s", *(p + i), " ");
     }
     printf("\n");
     return p;
